@@ -1,7 +1,7 @@
 ## CoCaIn BPG: Fast Inertial Algorithm for Non-convex Optimization
 
 ## [Convex-Concave Backtracking for Inertial Bregman Proximal Gradient Algorithms in Non-Convex Optimization](https://arxiv.org/abs/1904.03537) 
-by Mahesh Chandra Mukkamala, Peter Ochs,Thomas Pock and Shoham Sabach.
+by Mahesh Chandra Mukkamala, Peter Ochs, Thomas Pock and Shoham Sabach.
 
 ### Code theme: CoCaIn BPG escapes Spurious Stationary Points
 
