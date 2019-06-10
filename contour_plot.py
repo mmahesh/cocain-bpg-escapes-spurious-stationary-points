@@ -1,4 +1,5 @@
 import numpy as np
+
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -8,16 +9,23 @@ matplotlib.rcParams['ps.fonttype'] = 42
 
 
 import numpy as np
+
 def f(x, y):
+	# function of two variable
+	# Check README file
+	
 	return 0.5*np.log(1+100*(np.abs(x-1)**2))+0.5*np.log(1+(100*np.abs(y-1)**2))+ np.log(1+np.abs(x))+np.log(1+np.abs(y))
 
-
+# creating the grid for plotting
 x = np.linspace(-2, 2, 100)
 y = np.linspace(-2, 2, 100)
-
 X, Y = np.meshgrid(x, y)
-Z = f(X, Y)
+Z = f(X, Y) # obtain the function values over grid
 
+
+# We need to create 6 plots
+# i=0 reserved for contour plot
+# i=0 reserved for contour plot
 for i in range(6):
 	plt.contour(X, Y, Z, 100, cmap='RdBu');
 	plt.plot(0, 1, 'bh', fillstyle='none')
@@ -26,6 +34,9 @@ for i in range(6):
 	plt.plot(0, 0, 'bh', fillstyle='none')
 
 	if i>1:
+		# to plot with various initializations
+		# the array in the file name denote the initialization point
+
 		if i==2:
 			p1 = np.loadtxt('results/cocain_trajectory_[2 2].txt')
 		elif i ==3:
@@ -44,6 +55,9 @@ for i in range(6):
 		plt.savefig('figures/example_contour.png')
 	plt.clf()
 
+
+# The following code is to visualize the loss function
+# check the Function surface plot in README file
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
