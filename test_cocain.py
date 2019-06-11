@@ -42,7 +42,7 @@ lL_est_main = lL_est # redundant variable for later usage
 
 # creating arguments to automate the experiments
 import argparse
-parser = argparse.ArgumentParser(description='Plot Experiments')
+parser = argparse.ArgumentParser(description='Experiments: CoCaIn BPG escapes Spurious Stationary Points')
 parser.add_argument('--init_Ux', '--init_Ux', default=0,type=int,  dest='init_Ux') # x coordinate
 parser.add_argument('--init_Uy', '--init_Uy', default=0,type=int,  dest='init_Uy') # y coordinate
 args = parser.parse_args()
