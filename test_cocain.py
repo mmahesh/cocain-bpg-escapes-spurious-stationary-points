@@ -27,7 +27,9 @@ del_val = 0.15
 eps_val = 0.00001
 
 # upper L initialization
-uL_est = 1/(1-del_val) + 1e-3
+uL_est = 1/(1-del_val) + 1e-3 # here i used 1e-3, but actually any value >0 is fine 
+
+# It is not preferable to set a large upper L as it might result in very small steps.
 
 # lower L guess for each iteration
 # can be anything something small
