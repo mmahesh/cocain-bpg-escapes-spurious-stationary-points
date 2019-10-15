@@ -14,7 +14,8 @@ def f(x, y):
 	# function of two variable
 	# Check README file
 	
-	return 0.5*np.log(1+100*(np.abs(x-1)**2))+0.5*np.log(1+(100*np.abs(y-1)**2))+ np.log(1+np.abs(x))+np.log(1+np.abs(y))
+	return 0.5*np.log(1+100*(np.abs(x-1)**2))+0.5*np.log(1+(100*np.abs(y-1)**2))\
+				+ np.log(1+np.abs(x))+np.log(1+np.abs(y))
 
 # creating the grid for plotting
 x = np.linspace(-2, 2, 100)
